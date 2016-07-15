@@ -13,7 +13,7 @@
     }
     50% {
         background-color: blue;
-        left: 400px;
+        left: 200px;
         top: 400px;
     }
     100% {
@@ -74,4 +74,55 @@ div {
     background-image: url(../img/dance%20floor.jpg);
     height: 100%;
     width: 100%;
+}
+.dance {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 1px #555 solid;
+    border-top-left-radius: 800px;
+    border-top-right-radius: 800px;
+    border-bottom-right-radius: 800px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.element {
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+    border-radius: 100%;
+}
+@keyframes pulse {
+    0%,
+    100% {
+        background-color: red;
+    }
+    50% {
+        background-color: orange;
+    }
+}
+@keyframes nudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(150px, 0);
+    }
+    80% {
+        transform: translate(-150px, 0);
+    }
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
