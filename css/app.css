@@ -13,7 +13,7 @@
     }
     50% {
         background-color: blue;
-        left: 400px;
+        left: 200px;
         top: 400px;
     }
     100% {
@@ -74,4 +74,19 @@ div {
     background-image: url(../img/dance%20floor.jpg);
     height: 100%;
     width: 100%;
+}
+
+.dance {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 1px #555 solid;
+    border-top-left-radius: 800px;
+    border-top-right-radius: 800px;
+    border-bottom-right-radius: 800px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
